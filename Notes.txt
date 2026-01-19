@@ -1,0 +1,30 @@
+>>> Basics:
+    >> It can be compiled or interprited or something in between as in Java.
+    >> You don t need any JVM or any virtual machine to run in Go.
+    >> Used in big tech giants, web apps , cloud platform etc, already in production.
+    >>Is it Object Oriented?.... Yes and No....it does not have class and object but have structs....also it does not have overloadings
+    >> Go is very strict regarding case sensitiveness
+
+>>> commands:
+
+    >>go help: gives lots of commands to be used 
+    >> go env GOPATH: to about the go-package and folders
+
+>>> To Create a Executable file: 
+    If you want to make you go file to convert to a executable file in windows or linux or any other OS , you can simply do it in Go by using the command: GOOS="windows" go build
+
+    Run this command inside that folder and it will create a exe file for windows
+
+    Or simply use command : go build....it will create the exe file for the same
+
+
+>>> Memory Management:
+    
+    >> Memory allocation and deallocation happens automatically in Go
+    >> new(): Allocate memory but no INIT 
+        you will get a memory address
+        zeroed storage
+    >> make(): Allocate memory and INIT 
+        you will get a memory address
+        non-zeroed storage
+    >> Garbage collection happens automatically in go
