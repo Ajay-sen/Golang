@@ -48,3 +48,7 @@ Go supports **easy cross-compilation**.
 ### Build for Current OS
 ```bash
 go build
+
+## Build for specific OS
+```bash
+GOOS="windows" go build
