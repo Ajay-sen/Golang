@@ -48,7 +48,22 @@ Go supports **easy cross-compilation**.
 ### Build for Current OS
 ```bash
 go build
+```
 
 ### Build for specific OS
 ```bash
 GOOS="windows" go build
+```
+
+## 🧠 Memory Management
+- Automatic Garbage Collection (GC)
+- No manual memory allocation or deallocation needed.
+
+### Allocation Methods
+
+| Feature  | `new()`               | `make()`                |
+| -------- | --------------------- | ----------------------- |
+| Purpose  | Allocates memory only | Allocates + initializes |
+| Result   | Returns pointer       | Returns value           |
+| Used For | All types             | Slices, maps, channels  |
+| Storage  | Zeroed                | Initialized             |
