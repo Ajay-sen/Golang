@@ -67,3 +67,27 @@ GOOS="windows" go build
 | Result   | Returns pointer       | Returns value           |
 | Used For | All types             | Slices, maps, channels  |
 | Storage  | Zeroed                | Initialized             |
+
+
+# Defer in Go
+
+`defer` is a Go keyword used to postpone the execution of a function until the surrounding function returns.
+
+## Why use defer?
+- Resource cleanup (files, DB, locks)
+- Cleaner and safer code
+- Ensures execution even during panic
+
+## How defer works
+- Deferred calls execute after function return
+- Multiple defers follow **LIFO (Last In First Out)** order
+- Arguments are evaluated immediately
+
+## Example
+```go
+func example() {
+    defer fmt.Println("Second")
+    defer fmt.Println("First")
+}
+```
+
