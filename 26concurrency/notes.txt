@@ -1,0 +1,7 @@
+>>> Concurrency: switching between different tasks , in such a way that they apper to be occuring simultaneously , but actually you r doing one task at a time
+
+
+>>> Parallelism: Doing multipoe tasks actually simultaenaesly
+
+>>> Thread: Managed by OS, and be default size is 1MB
+>>> Goroutines: Managed by Go runtime, and be default size is 2 KB 
